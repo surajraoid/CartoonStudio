@@ -4,8 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import { BlurView } from 'expo-blur';
-import Animated, { FadeIn } from 'react-native-reanimated';
+// BlurView and Animated available for future use
 import { useStore } from '../store/useStore';
 import { COLORS } from '../constants';
 

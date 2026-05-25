@@ -6,11 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0F0F23"
-    },
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.cartoonai.studio"
@@ -28,6 +23,22 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": []
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0F0F23",
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["expo-av"],
+        "listUnknownPackages": false
+      }
+    }
   }
 }
